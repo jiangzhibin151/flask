@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>artice.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="../static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../static/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+    <div class="sidenav">
+		<div class="side_top">
+			<img src="../static/images/logo.jpg" alt="news image" class="img-fluid navimg" style="width: 140px">
+			<h1> 姜志彬的博客 <br><span style="font-size: 16px;">持续更新中...</span></h1>
+		</div>
+		<!-- header -->
+		<header>
+			<div class="container-fluid px-lg-5 ">
+				<nav class="mnu mx-auto">
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop">
+						<ul class="menu">
+							 <li class="active"><a href="{{ url_index }}index">主页</a></li>
+                             <li class="mt-sm-3"><a href="{{ url_index }}category" class="scroll">文章类别</a></li>
+                             <li class="mt-sm-3"><a href="{{ url_index }}login" class="scroll">登陆注册</a></li>
+                             <li class="mt-sm-3"><a href="{{ url_index }}information" class="scroll">个人信息</a></li>
+                        </ul>
+				</nav>
+			</div>
+		</header>
+    </div>
+
+    <div class="main" id="about">
+        <div class="banner-text-w3ls">
+            <div class="container" style="margin-left: -50px">
+                <div class="mx-auto text-left">
+                    <p style="font-size: 24px; color: #1b1e21;text-align: center">{{ data['title'] }}</p>
+                    <p style="text-align: right">{{ data['time'] }}</p>
+					<div class="banp mt-5" style=" color: #777777">{{ data['content'] }}</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

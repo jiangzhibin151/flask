@@ -1,1 +1,2 @@
-# flask
+# python-flask
+flask框架实现博客网站，持续更新...

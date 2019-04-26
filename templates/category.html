@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="../static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../static/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+    <div class="sidenav">
+		<div class="side_top">
+			<img src="../static/images/logo.jpg" alt="news image" class="img-fluid navimg" style="width: 140px">
+			<h1> 姜志彬的博客 <br><span style="font-size: 16px;">持续更新中...</span></h1>
+		</div>
+		<!-- header -->
+		<header>
+			<div class="container-fluid px-lg-5 ">
+				<nav class="mnu mx-auto">
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop">
+						<ul class="menu">
+							<li class="active"><a href="{{ url_index }}index">主页</a></li>
+                             <li class="mt-sm-3"><a href="{{ url_index }}category" class="scroll">文章类别</a></li>
+                             <li class="mt-sm-3"><a href="{{ url_index }}login" class="scroll">登陆注册</a></li>
+                             <li class="mt-sm-3"><a href="{{ url_index }}information" class="scroll">个人信息</a></li>
+                        </ul>
+				</nav>
+			</div>
+		</header>
+    </div>
+    <div class="news" id="news" style="margin-left: 500px">
+        <div class="text-left">
+            <h3 class="w3_head mb-5">文章类别</h3>
+        </div>
+        <div class="row news-grids">
+            <div class="col-lg-6 news-grids-left">
+                <div class="news_top">
+                    <img src="../static/images/python.jpg" alt="news image" class="img-fluid" style="width: 100px;height: 100px">
+                    <h4>python</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 news-grids-middle">
+                <div class="news_top">
+                    <img src="../static/images/Java_logo.png" alt="news image" class="img-fluid" style="width: 100px;height: 100px">
+                    <h4>Java</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 news-grids-right">
+                <div class="news_top">
+                    <img src="../static/images/js.jpg" alt="news image" class="img-fluid" style="width: 100px;height: 100px">
+                    <h4>javascript</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 news-grids-right">
+                <div class="news_top">
+                    <img src="../static/images/1200px-ISO_C++_Logo.svg.png" alt="news image" class="img-fluid" style="width: 100px;height: 100px">
+                    <h4>c/c++</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 news-grids-right">
+                <div class="news_top">
+                    <img src="../static/images/1200px-Node.js_logo.svg.png" alt="news image" class="img-fluid" style="width: 100px;height: 100px">
+                    <h4>node.js</h4>
+                </div>
+            </div>
+            <div class="col-lg-6 news-grids-right">
+                <div class="news_top">
+                    <img src="../static/images/mysql.jpg" alt="news image" class="img-fluid" style="width: 100px;height: 100px">
+                    <h4>mysql</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
